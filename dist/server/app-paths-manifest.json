@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/register/page": "app/register/page.js",
+  "/dashboard/tasks/[id]/page": "app/dashboard/tasks/[id]/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/tasks/page": "app/dashboard/tasks/page.js",
+  "/dashboard/tasks/new/page": "app/dashboard/tasks/new/page.js",
+  "/dashboard/tasks/edit/[id]/page": "app/dashboard/tasks/edit/[id]/page.js"
+}
