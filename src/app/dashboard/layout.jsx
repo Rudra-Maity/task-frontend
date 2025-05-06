@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useAuth } from '@/context/auth-context'
 import Header from '@/components/dashboard/header'
-import Sidebar from '@/components/dashboard/sidebar'
+import Sidebar from '@/components/dashboard/SideBar'
 
 export default function DashboardLayout({ children }) {
   const { user, loading, isAuthenticated } = useAuth()
