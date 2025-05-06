@@ -3,7 +3,8 @@
     "baseUrl": "src",
     "paths": {
       "@/components/*": ["components/*"],
-      "@/context/*":["context/*"]
+      "@/context/*":["context/*"],
+      "@/lib/*": ["lib/*"]
     }
   }
 }
