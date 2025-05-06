@@ -431,7 +431,7 @@ export default function TaskDetailView({params}) {
                 <div className="mr-3">
                   <Avatar>
                     <AvatarFallback className="bg-gray-200 text-gray-700">
-                      {creator ? getInitials(creator.name) : '?'}
+                      {task.createdBy ? getInitials(task.createdBy.name) : '?'}
                     </AvatarFallback>
                   </Avatar>
                 </div>
@@ -443,19 +443,21 @@ export default function TaskDetailView({params}) {
                 </div>
               </div>
               
+              {console.log(task)
+              }
               {/* Assignee (if different from creator) */}
               {task.assignedTo && (
                 <div className="flex items-center">
                   <div className="mr-3">
                     <Avatar>
                       <AvatarFallback className="bg-blue-100 text-blue-700">
-                        {assignee ? getInitials(assignee.name) : '?'}
+                        {task.assignedTo ? getInitials(task.assignedTo.name) : '?'}
                       </AvatarFallback>
                     </Avatar>
                   </div>
                   <div>
                     <p className="font-medium">
-                      {assignee ? assignee.name : 'Unknown User'}
+                      {task.assignedTo ? task.assignedTo.name : 'Unknown User'}
                     </p>
                     <p className="text-sm text-gray-500">Assigned to</p>
                   </div>
